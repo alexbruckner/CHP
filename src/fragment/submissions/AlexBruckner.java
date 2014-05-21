@@ -108,7 +108,6 @@ public class AlexBruckner {
         int len = 0;
         while (current != null) {
             sb.append(current.fragment.substring(len));
-            System.out.println(current + " <-> " + len);
             len = current.getMatchLength();
             current = current.getRight();
         }
